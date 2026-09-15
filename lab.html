@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>آزمایشگاه | کدنویسی آسان</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="container header-container">
+
+        <div class="logo">
+            💻 کدنویسی آسان
+        </div>
+
+        <nav>
+
+            <a href="index.html">خانه</a>
+            <a href="html-course.html">HTML</a>
+            <a href="css-course.html">CSS</a>
+            <a href="js-course.html">JavaScript</a>
+            <a href="exercises.html">تمرین‌ها</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="lab-page">
+
+    <h1>🧪 آزمایشگاه کدنویسی</h1>
+
+    <p>
+        کد HTML، CSS و JavaScript خودت را بنویس
+        و اجرا کن.
+    </p>
+
+
+    <div class="lab-help">
+
+        💡 ابتدا کدها را وارد کن و سپس
+        روی «اجرای کد» کلیک کن.
+
+    </div>
+
+
+    <div class="lab-container">
+
+
+        <div class="editor-card">
+
+            <h2>HTML</h2>
+
+            <textarea id="htmlCode">
+<h1>سلام دنیا!</h1>
+
+<p>
+این اولین کد من است.
+</p>
+
+<button onclick="hello()">
+کلیک کن
+</button>
+            </textarea>
+
+        </div>
+
+
+        <div class="editor-card">
+
+            <h2>CSS</h2>
+
+            <textarea id="cssCode">
+body {
+    font-family: Tahoma;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: blue;
+}
+
+button {
+    padding: 10px 20px;
+}
+            </textarea>
+
+        </div>
+
+
+        <div class="editor-card">
+
+            <h2>JavaScript</h2>
+
+            <textarea id="jsCode">
+function hello() {
+    alert("سلام!");
+}
+            </textarea>
+
+        </div>
+
+    </div>
+
+
+    <div class="lab-buttons">
+
+        <button
+            class="run-button"
+            onclick="runCode()">
+
+            ▶ اجرای کد
+
+        </button>
+
+
+        <button
+            class="clear-button"
+            onclick="clearCode()">
+
+            🗑 پاک کردن
+
+        </button>
+
+
+        <button
+            class="example-button"
+            onclick="exampleCode()">
+
+            💡 مثال
+
+        </button>
+
+    </div>
+
+
+    <div class="result-title">
+
+        <h2>
+            نتیجه:
+        </h2>
+
+    </div>
+
+
+    <iframe
+        id="result"
+        class="result-frame">
+    </iframe>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 کدنویسی آسان
+    </p>
+
+</footer>
+
+
+<script>
+
+function runCode() {
+
+    var html =
+        document.getElementById("htmlCode").value;
+
+    var css =
+        document.getElementById("cssCode").value;
+
+    var js =
+        document.getElementById("jsCode").value;
+
+
+    var result =
+        document.getElementById("result");
+
+
+    var page =
+
+        "<!DOCTYPE html>" +
+
+        "<html>" +
+
+        "<head>" +
+
+        "<meta charset='UTF-8'>" +
+
+        "<style>" +
+        css +
+        "</style>" +
+
+        "</head>" +
+
+        "<body>" +
+
+        html +
+
+        "<script>" +
+
+        js +
+
+        "<\/script>" +
+
+        "</body>" +
+
+        "</html>";
+
+
+    result.srcdoc = page;
+
+}
+
+
+function clearCode() {
+
+    document.getElementById("htmlCode").value = "";
+
+    document.getElementById("cssCode").value = "";
+
+    document.getElementById("jsCode").value = "";
+
+    document.getElementById("result").srcdoc = "";
+
+}
+
+
+function exampleCode() {
+
+    document.getElementById("htmlCode").value =
+        "<h1>کدنویسی آسان</h1>\n" +
+        "<p>به سایت من خوش آمدی!</p>\n" +
+        "<button onclick=\"hello()\">کلیک کن</button>";
+
+
+    document.getElementById("cssCode").value =
+        "body {\n" +
+        "    font-family: Tahoma;\n" +
+        "    text-align: center;\n" +
+        "    padding: 30px;\n" +
+        "}\n\n" +
+
+        "h1 {\n" +
+        "    color: blue;\n" +
+        "}\n\n" +
+
+        "button {\n" +
+        "    padding: 10px 20px;\n" +
+        "}";
+
+
+    document.getElementById("jsCode").value =
+        "function hello() {\n" +
+        "    alert('سلام!');\n" +
+        "}";
+
+
+    runCode();
+
+}
+
+</script>
+
+</body>
+
+</html>

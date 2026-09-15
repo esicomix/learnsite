@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>دوره JavaScript | کدنویسی آسان</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="container header-container">
+
+        <div class="logo">
+            💻 کدنویسی آسان
+        </div>
+
+        <nav>
+
+            <a href="index.html">خانه</a>
+            <a href="html-course.html">HTML</a>
+            <a href="css-course.html">CSS</a>
+            <a href="exercises.html">تمرین‌ها</a>
+            <a href="lab.html">آزمایشگاه</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="lesson-page">
+
+    <h1>⚡ دوره آموزش JavaScript</h1>
+
+    <p>
+        با JavaScript سایت خود را تعاملی کن.
+    </p>
+
+
+    <div class="lesson-list">
+
+        <button onclick="showLesson(1)">
+            درس 1 - JavaScript چیست؟
+        </button>
+
+        <button onclick="showLesson(2)">
+            درس 2 - متغیرها
+        </button>
+
+        <button onclick="showLesson(3)">
+            درس 3 - alert
+        </button>
+
+        <button onclick="showLesson(4)">
+            درس 4 - شرط‌ها
+        </button>
+
+        <button onclick="showLesson(5)">
+            درس 5 - توابع
+        </button>
+
+        <button onclick="showLesson(6)">
+            درس 6 - رویداد کلیک
+        </button>
+
+        <button onclick="showLesson(7)">
+            درس 7 - تغییر HTML
+        </button>
+
+        <button onclick="showLesson(8)">
+            درس 8 - حلقه‌ها
+        </button>
+
+        <button onclick="showLesson(9)">
+            درس 9 - آرایه‌ها
+        </button>
+
+        <button onclick="showLesson(10)">
+            درس 10 - پروژه کوچک
+        </button>
+
+    </div>
+
+
+    <div id="lesson1" class="lesson">
+
+        <h2>درس 1: JavaScript چیست؟</h2>
+
+        <p>
+            JavaScript یک زبان برنامه‌نویسی است
+            که باعث تعامل سایت با کاربر می‌شود.
+        </p>
+
+        <div class="code-box">
+console.log("سلام دنیا");
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: عبارت «Hello World» را در console چاپ کن.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(2)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson2" class="lesson">
+
+        <h2>درس 2: متغیرها</h2>
+
+        <div class="code-box">
+var name = "Ali";
+
+var age = 20;
+        </div>
+
+        <p>
+            متغیر برای ذخیره اطلاعات استفاده می‌شود.
+        </p>
+
+        <div class="exercise">
+            📝 تمرین: یک متغیر برای نام و یک متغیر برای سن بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(3)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson3" class="lesson">
+
+        <h2>درس 3: alert</h2>
+
+        <div class="code-box">
+alert("سلام!");
+
+        </div>
+
+        <p>
+            alert یک پیام به کاربر نشان می‌دهد.
+        </p>
+
+        <div class="exercise">
+            📝 تمرین: یک پیام خوش‌آمدگویی با alert نمایش بده.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(4)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson4" class="lesson">
+
+        <h2>درس 4: شرط‌ها</h2>
+
+        <div class="code-box">
+var age = 18;
+
+if (age >= 18) {
+
+    console.log("بزرگسال");
+
+} else {
+
+    console.log("نابالغ");
+
+}
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: بررسی کن یک عدد مثبت است یا منفی.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(5)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson5" class="lesson">
+
+        <h2>درس 5: توابع</h2>
+
+        <div class="code-box">
+function hello() {
+
+    alert("سلام!");
+
+}
+
+hello();
+        </div>
+
+        <p>
+            تابع مجموعه‌ای از دستورات است
+            که می‌توانیم چند بار اجرا کنیم.
+        </p>
+
+        <div class="exercise">
+            📝 تمرین: تابعی بساز که نام کاربر را نمایش دهد.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(6)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson6" class="lesson">
+
+        <h2>درس 6: رویداد کلیک</h2>
+
+        <div class="code-box">
+&lt;button onclick="hello()"&gt;
+    کلیک کن
+&lt;/button&gt;
+
+&lt;script&gt;
+
+function hello() {
+
+    alert("سلام!");
+
+}
+
+&lt;/script&gt;
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: با کلیک روی دکمه یک پیام نمایش بده.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(7)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson7" class="lesson">
+
+        <h2>درس 7: تغییر HTML</h2>
+
+        <div class="code-box">
+document.getElementById("title")
+    .innerHTML = "سلام";
+        </div>
+
+        <p>
+            JavaScript می‌تواند محتوای HTML را تغییر دهد.
+        </p>
+
+        <div class="exercise">
+            📝 تمرین: متن یک h1 را با JavaScript تغییر بده.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(8)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson8" class="lesson">
+
+        <h2>درس 8: حلقه‌ها</h2>
+
+        <div class="code-box">
+for (var i = 1; i <= 5; i++) {
+
+    console.log(i);
+
+}
+        </div>
+
+        <p>
+            حلقه برای تکرار دستورات استفاده می‌شود.
+        </p>
+
+        <div class="exercise">
+            📝 تمرین: اعداد 1 تا 10 را چاپ کن.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(9)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson9" class="lesson">
+
+        <h2>درس 9: آرایه‌ها</h2>
+
+        <div class="code-box">
+var languages = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+console.log(languages[0]);
+        </div>
+
+        <p>
+            آرایه برای نگهداری چند مقدار استفاده می‌شود.
+        </p>
+
+        <div class="exercise">
+            📝 تمرین: آرایه‌ای شامل 5 زبان برنامه‌نویسی بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(10)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson10" class="lesson">
+
+        <h2>درس 10: پروژه کوچک</h2>
+
+        <p>
+            حالا می‌توانیم یک شمارنده ساده بسازیم.
+        </p>
+
+        <div class="code-box">
+var count = 0;
+
+function add() {
+
+    count++;
+
+    document.getElementById("number")
+        .innerHTML = count;
+
+}
+        </div>
+
+        <div class="tip">
+            🎉 تبریک! دوره JavaScript را تمام کردی.
+        </div>
+
+        <div class="exercise">
+            📝 پروژه: یک شمارنده با دکمه‌های
+            افزایش و کاهش بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <a href="exercises.html"
+               class="main-button">
+                رفتن به تمرین‌ها
+            </a>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 کدنویسی آسان
+    </p>
+
+</footer>
+
+
+<script>
+
+function showLesson(number) {
+
+    var lessons =
+        document.querySelectorAll(".lesson");
+
+    for (var i = 0; i < lessons.length; i++) {
+
+        lessons[i].classList.remove("active");
+
+    }
+
+    var lesson =
+        document.getElementById(
+            "lesson" + number
+        );
+
+    if (lesson) {
+
+        lesson.classList.add("active");
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
+
+}
+
+
+function backToLessons() {
+
+    var lessons =
+        document.querySelectorAll(".lesson");
+
+    for (var i = 0; i < lessons.length; i++) {
+
+        lessons[i].classList.remove("active");
+
+    }
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+</script>
+
+</body>
+
+</html>

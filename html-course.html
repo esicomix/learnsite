@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>دوره HTML | کدنویسی آسان</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="container header-container">
+
+        <div class="logo">
+            💻 کدنویسی آسان
+        </div>
+
+        <nav>
+
+            <a href="index.html">خانه</a>
+            <a href="css-course.html">CSS</a>
+            <a href="js-course.html">JavaScript</a>
+            <a href="exercises.html">تمرین‌ها</a>
+            <a href="lab.html">آزمایشگاه</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="lesson-page">
+
+    <h1>🌐 دوره آموزش HTML</h1>
+
+    <p>
+        در این دوره HTML را از صفر یاد می‌گیری.
+    </p>
+
+
+    <div class="lesson-list">
+
+        <button onclick="showLesson(1)">
+            درس 1 - HTML چیست؟
+        </button>
+
+        <button onclick="showLesson(2)">
+            درس 2 - اولین صفحه HTML
+        </button>
+
+        <button onclick="showLesson(3)">
+            درس 3 - عنوان‌ها و متن‌ها
+        </button>
+
+        <button onclick="showLesson(4)">
+            درس 4 - لینک‌ها
+        </button>
+
+        <button onclick="showLesson(5)">
+            درس 5 - تصاویر
+        </button>
+
+        <button onclick="showLesson(6)">
+            درس 6 - لیست‌ها
+        </button>
+
+        <button onclick="showLesson(7)">
+            درس 7 - دکمه‌ها
+        </button>
+
+        <button onclick="showLesson(8)">
+            درس 8 - جدول‌ها
+        </button>
+
+        <button onclick="showLesson(9)">
+            درس 9 - فرم‌ها
+        </button>
+
+        <button onclick="showLesson(10)">
+            درس 10 - ساختار حرفه‌ای صفحه
+        </button>
+
+    </div>
+
+
+    <!-- LESSON 1 -->
+
+    <div id="lesson1" class="lesson">
+
+        <h2>درس 1: HTML چیست؟</h2>
+
+        <p>
+            HTML زبان ساختار صفحات وب است.
+        </p>
+
+        <p>
+            با HTML مشخص می‌کنیم در صفحه چه چیزهایی
+            وجود داشته باشد؛ مثل متن، عکس، لینک و فرم.
+        </p>
+
+        <div class="code-box">
+&lt;h1&gt;سلام دنیا&lt;/h1&gt;
+        </div>
+
+        <div class="tip">
+            💡 HTML برای طراحی ظاهر نیست؛
+            ساختار صفحه را مشخص می‌کند.
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: یک عنوان با متن «سلام دنیا» بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(2)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست درس‌ها
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- LESSON 2 -->
+
+    <div id="lesson2" class="lesson">
+
+        <h2>درس 2: اولین صفحه HTML</h2>
+
+        <p>
+            یک صفحه HTML معمولاً با ساختار زیر شروع می‌شود:
+        </p>
+
+        <div class="code-box">
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;صفحه من&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;سلام دنیا&lt;/h1&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+        </div>
+
+        <p>
+            بخش body محتوایی را نگه می‌دارد
+            که کاربر در صفحه می‌بیند.
+        </p>
+
+        <div class="exercise">
+            📝 تمرین: یک فایل index.html بساز
+            و کد بالا را داخل آن قرار بده.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(3)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست درس‌ها
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- LESSON 3 -->
+
+    <div id="lesson3" class="lesson">
+
+        <h2>درس 3: عنوان‌ها و متن‌ها</h2>
+
+        <p>
+            برای عنوان‌ها از h1 تا h6 استفاده می‌کنیم.
+        </p>
+
+        <div class="code-box">
+&lt;h1&gt;عنوان اصلی&lt;/h1&gt;
+
+&lt;h2&gt;عنوان دوم&lt;/h2&gt;
+
+&lt;p&gt;این یک پاراگراف است.&lt;/p&gt;
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: یک h1، یک h2 و سه پاراگراف بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(4)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست درس‌ها
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- LESSON 4 -->
+
+    <div id="lesson4" class="lesson">
+
+        <h2>درس 4: لینک‌ها</h2>
+
+        <p>
+            برای ساخت لینک از تگ a استفاده می‌کنیم.
+        </p>
+
+        <div class="code-box">
+&lt;a href="https://example.com"&gt;
+    ورود به سایت
+&lt;/a&gt;
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: یک لینک به Google بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(5)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست درس‌ها
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- LESSON 5 -->
+
+    <div id="lesson5" class="lesson">
+
+        <h2>درس 5: تصاویر</h2>
+
+        <p>
+            برای نمایش تصویر از img استفاده می‌کنیم.
+        </p>
+
+        <div class="code-box">
+&lt;img src="image.jpg" alt="تصویر من"&gt;
+        </div>
+
+        <p>
+            ویژگی alt برای توضیح تصویر استفاده می‌شود.
+        </p>
+
+        <div class="exercise">
+            📝 تمرین: یک تصویر به صفحه خود اضافه کن.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(6)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست درس‌ها
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- LESSON 6 -->
+
+    <div id="lesson6" class="lesson">
+
+        <h2>درس 6: لیست‌ها</h2>
+
+        <p>
+            لیست بدون ترتیب با ul ساخته می‌شود.
+        </p>
+
+        <div class="code-box">
+&lt;ul&gt;
+
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+
+&lt;/ul&gt;
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: لیستی از 5 زبان برنامه‌نویسی بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(7)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست درس‌ها
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- LESSON 7 -->
+
+    <div id="lesson7" class="lesson">
+
+        <h2>درس 7: دکمه‌ها</h2>
+
+        <div class="code-box">
+&lt;button&gt;
+    کلیک کن
+&lt;/button&gt;
+        </div>
+
+        <p>
+            button برای ساخت دکمه استفاده می‌شود.
+        </p>
+
+        <div class="exercise">
+            📝 تمرین: سه دکمه با متن‌های مختلف بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(8)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست درس‌ها
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- LESSON 8 -->
+
+    <div id="lesson8" class="lesson">
+
+        <h2>درس 8: جدول‌ها</h2>
+
+        <div class="code-box">
+&lt;table&gt;
+
+    &lt;tr&gt;
+        &lt;th&gt;نام&lt;/th&gt;
+        &lt;th&gt;سن&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;علی&lt;/td&gt;
+        &lt;td&gt;20&lt;/td&gt;
+    &lt;/tr&gt;
+
+&lt;/table&gt;
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: یک جدول سه ستونه بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(9)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست درس‌ها
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- LESSON 9 -->
+
+    <div id="lesson9" class="lesson">
+
+        <h2>درس 9: فرم‌ها</h2>
+
+        <div class="code-box">
+&lt;form&gt;
+
+    &lt;input type="text"
+           placeholder="نام"&gt;
+
+    &lt;input type="email"
+           placeholder="ایمیل"&gt;
+
+    &lt;button&gt;
+        ارسال
+    &lt;/button&gt;
+
+&lt;/form&gt;
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: یک فرم ثبت‌نام بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(10)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست درس‌ها
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- LESSON 10 -->
+
+    <div id="lesson10" class="lesson">
+
+        <h2>درس 10: ساختار حرفه‌ای صفحه</h2>
+
+        <p>
+            در HTML5 می‌توانیم از تگ‌های معنایی استفاده کنیم.
+        </p>
+
+        <div class="code-box">
+&lt;header&gt;
+
+    &lt;nav&gt;
+        منو
+    &lt;/nav&gt;
+
+&lt;/header&gt;
+
+&lt;main&gt;
+
+    &lt;section&gt;
+        محتوای اصلی
+    &lt;/section&gt;
+
+&lt;/main&gt;
+
+&lt;footer&gt;
+    پاورقی
+&lt;/footer&gt;
+        </div>
+
+        <div class="tip">
+            🎉 تبریک! دوره HTML را تمام کردی.
+        </div>
+
+        <div class="exercise">
+            📝 پروژه: یک صفحه شخصی با header،
+            main و footer بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <a href="css-course.html"
+               class="main-button">
+                شروع دوره CSS
+            </a>
+
+            <button onclick="backToLessons()">
+                فهرست درس‌ها
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 کدنویسی آسان
+    </p>
+
+</footer>
+
+
+<script>
+
+function showLesson(number) {
+
+    var lessons =
+        document.querySelectorAll(".lesson");
+
+    for (var i = 0; i < lessons.length; i++) {
+
+        lessons[i].classList.remove("active");
+
+    }
+
+    var lesson =
+        document.getElementById(
+            "lesson" + number
+        );
+
+    if (lesson) {
+
+        lesson.classList.add("active");
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
+
+}
+
+
+function backToLessons() {
+
+    var lessons =
+        document.querySelectorAll(".lesson");
+
+    for (var i = 0; i < lessons.length; i++) {
+
+        lessons[i].classList.remove("active");
+
+    }
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+</script>
+
+</body>
+
+</html>

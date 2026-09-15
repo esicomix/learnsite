@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>دوره CSS | کدنویسی آسان</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="container header-container">
+
+        <div class="logo">
+            💻 کدنویسی آسان
+        </div>
+
+        <nav>
+
+            <a href="index.html">خانه</a>
+            <a href="html-course.html">HTML</a>
+            <a href="js-course.html">JavaScript</a>
+            <a href="exercises.html">تمرین‌ها</a>
+            <a href="lab.html">آزمایشگاه</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="lesson-page">
+
+    <h1>🎨 دوره آموزش CSS</h1>
+
+    <p>
+        در این دوره یاد می‌گیری چطور ظاهر سایت را زیبا کنی.
+    </p>
+
+
+    <div class="lesson-list">
+
+        <button onclick="showLesson(1)">
+            درس 1 - CSS چیست؟
+        </button>
+
+        <button onclick="showLesson(2)">
+            درس 2 - رنگ‌ها
+        </button>
+
+        <button onclick="showLesson(3)">
+            درس 3 - فونت و متن
+        </button>
+
+        <button onclick="showLesson(4)">
+            درس 4 - پس‌زمینه
+        </button>
+
+        <button onclick="showLesson(5)">
+            درس 5 - فاصله‌ها
+        </button>
+
+        <button onclick="showLesson(6)">
+            درس 6 - Border
+        </button>
+
+        <button onclick="showLesson(7)">
+            درس 7 - کلاس‌ها
+        </button>
+
+        <button onclick="showLesson(8)">
+            درس 8 - Flexbox
+        </button>
+
+        <button onclick="showLesson(9)">
+            درس 9 - Grid
+        </button>
+
+        <button onclick="showLesson(10)">
+            درس 10 - Responsive
+        </button>
+
+    </div>
+
+
+    <div id="lesson1" class="lesson">
+
+        <h2>درس 1: CSS چیست؟</h2>
+
+        <p>
+            CSS برای طراحی ظاهر صفحات HTML استفاده می‌شود.
+        </p>
+
+        <div class="code-box">
+h1 {
+    color: blue;
+}
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: رنگ یک h1 را آبی کن.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(2)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson2" class="lesson">
+
+        <h2>درس 2: رنگ‌ها</h2>
+
+        <div class="code-box">
+body {
+    background: lightblue;
+}
+
+h1 {
+    color: red;
+}
+        </div>
+
+        <p>
+            می‌توانی از نام رنگ، HEX و RGB استفاده کنی.
+        </p>
+
+        <div class="exercise">
+            📝 تمرین: پس‌زمینه صفحه را سبز کن.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(3)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson3" class="lesson">
+
+        <h2>درس 3: فونت و متن</h2>
+
+        <div class="code-box">
+p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: یک متن 25 پیکسلی و وسط‌چین بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(4)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson4" class="lesson">
+
+        <h2>درس 4: پس‌زمینه</h2>
+
+        <div class="code-box">
+body {
+    background-color: #eef6ff;
+}
+
+.box {
+    background-image: url("image.jpg");
+}
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: پس‌زمینه یک div را تغییر بده.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(5)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson5" class="lesson">
+
+        <h2>درس 5: فاصله‌ها</h2>
+
+        <div class="code-box">
+.box {
+    margin: 20px;
+    padding: 15px;
+}
+        </div>
+
+        <p>
+            margin فاصله بیرونی و padding فاصله داخلی است.
+        </p>
+
+        <div class="exercise">
+            📝 تمرین: برای یک کارت margin و padding قرار بده.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(6)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson6" class="lesson">
+
+        <h2>درس 6: Border</h2>
+
+        <div class="code-box">
+.box {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: یک کارت با گوشه‌های گرد بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(7)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson7" class="lesson">
+
+        <h2>درس 7: کلاس‌ها</h2>
+
+        <p>
+            کلاس‌ها اجازه می‌دهند چند عنصر را با یک CSS کنترل کنیم.
+        </p>
+
+        <div class="code-box">
+.card {
+    background: white;
+    padding: 20px;
+}
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: سه کارت با کلاس card بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(8)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson8" class="lesson">
+
+        <h2>درس 8: Flexbox</h2>
+
+        <div class="code-box">
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+        </div>
+
+        <p>
+            Flexbox برای چیدمان عناصر بسیار کاربردی است.
+        </p>
+
+        <div class="exercise">
+            📝 تمرین: سه کارت را کنار هم قرار بده.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(9)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson9" class="lesson">
+
+        <h2>درس 9: Grid</h2>
+
+        <div class="code-box">
+.container {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+        </div>
+
+        <div class="exercise">
+            📝 تمرین: یک شبکه سه ستونه بساز.
+        </div>
+
+        <div class="lesson-nav">
+
+            <button onclick="showLesson(10)">
+                درس بعدی ←
+            </button>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="lesson10" class="lesson">
+
+        <h2>درس 10: Responsive</h2>
+
+        <p>
+            Responsive یعنی سایت در موبایل، تبلت و کامپیوتر
+            به شکل مناسب نمایش داده شود.
+        </p>
+
+        <div class="code-box">
+@media (max-width: 600px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+}
+        </div>
+
+        <div class="tip">
+            🎉 تبریک! دوره CSS را تمام کردی.
+        </div>
+
+        <div class="exercise">
+            📝 پروژه: یک صفحه کارت‌محور بساز
+            که در موبایل یک ستونه شود.
+        </div>
+
+        <div class="lesson-nav">
+
+            <a href="js-course.html"
+               class="main-button">
+                شروع JavaScript
+            </a>
+
+            <button onclick="backToLessons()">
+                فهرست
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 کدنویسی آسان
+    </p>
+
+</footer>
+
+
+<script>
+
+function showLesson(number) {
+
+    var lessons =
+        document.querySelectorAll(".lesson");
+
+    for (var i = 0; i < lessons.length; i++) {
+
+        lessons[i].classList.remove("active");
+
+    }
+
+    var lesson =
+        document.getElementById(
+            "lesson" + number
+        );
+
+    if (lesson) {
+
+        lesson.classList.add("active");
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
+
+}
+
+
+function backToLessons() {
+
+    var lessons =
+        document.querySelectorAll(".lesson");
+
+    for (var i = 0; i < lessons.length; i++) {
+
+        lessons[i].classList.remove("active");
+
+    }
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+</script>
+
+</body>
+
+</html>

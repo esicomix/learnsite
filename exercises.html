@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>تمرین‌ها | کدنویسی آسان</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="container header-container">
+
+        <div class="logo">
+            💻 کدنویسی آسان
+        </div>
+
+        <nav>
+
+            <a href="index.html">خانه</a>
+            <a href="html-course.html">HTML</a>
+            <a href="css-course.html">CSS</a>
+            <a href="js-course.html">JavaScript</a>
+            <a href="lab.html">آزمایشگاه</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="exercise-page">
+
+    <h1>📝 تمرین‌های برنامه‌نویسی</h1>
+
+    <p>
+        تمرین کن، اشتباه کن و دوباره تلاش کن!
+    </p>
+
+
+    <div class="exercise-filter">
+
+        <button onclick="showExercises('all')">
+            همه
+        </button>
+
+        <button onclick="showExercises('html')">
+            HTML
+        </button>
+
+        <button onclick="showExercises('css')">
+            CSS
+        </button>
+
+        <button onclick="showExercises('js')">
+            JavaScript
+        </button>
+
+        <button onclick="showExercises('common')">
+            مشترک
+        </button>
+
+    </div>
+
+
+    <div class="exercise-grid">
+
+
+        <div class="exercise-card" data-type="html">
+
+            <span>HTML</span>
+
+            <h3>
+                تمرین 1: عنوان و متن
+            </h3>
+
+            <p>
+                یک h1، یک h2 و سه پاراگراف بساز.
+            </p>
+
+            <a href="lab.html">
+                حل در آزمایشگاه
+            </a>
+
+        </div>
+
+
+        <div class="exercise-card" data-type="html">
+
+            <span>HTML</span>
+
+            <h3>
+                تمرین 2: لیست
+            </h3>
+
+            <p>
+                یک لیست از 5 زبان برنامه‌نویسی بساز.
+            </p>
+
+            <a href="lab.html">
+                حل در آزمایشگاه
+            </a>
+
+        </div>
+
+
+        <div class="exercise-card" data-type="html">
+
+            <span>HTML</span>
+
+            <h3>
+                تمرین 3: فرم
+            </h3>
+
+            <p>
+                یک فرم ثبت‌نام با نام، ایمیل و رمز عبور بساز.
+            </p>
+
+            <a href="lab.html">
+                حل در آزمایشگاه
+            </a>
+
+        </div>
+
+
+        <div class="exercise-card" data-type="css">
+
+            <span>CSS</span>
+
+            <h3>
+                تمرین 1: کارت
+            </h3>
+
+            <p>
+                یک کارت با عنوان، متن و دکمه طراحی کن.
+            </p>
+
+            <a href="lab.html">
+                حل در آزمایشگاه
+            </a>
+
+        </div>
+
+
+        <div class="exercise-card" data-type="css">
+
+            <span>CSS</span>
+
+            <h3>
+                تمرین 2: Flexbox
+            </h3>
+
+            <p>
+                سه کارت را با Flexbox کنار هم قرار بده.
+            </p>
+
+            <a href="lab.html">
+                حل در آزمایشگاه
+            </a>
+
+        </div>
+
+
+        <div class="exercise-card" data-type="css">
+
+            <span>CSS</span>
+
+            <h3>
+                تمرین 3: Responsive
+            </h3>
+
+            <p>
+                کاری کن کارت‌ها در موبایل زیر هم قرار بگیرند.
+            </p>
+
+            <a href="lab.html">
+                حل در آزمایشگاه
+            </a>
+
+        </div>
+
+
+        <div class="exercise-card" data-type="js">
+
+            <span>JavaScript</span>
+
+            <h3>
+                تمرین 1: پیام
+            </h3>
+
+            <p>
+                با JavaScript یک پیام خوش‌آمدگویی نمایش بده.
+            </p>
+
+            <a href="lab.html">
+                حل در آزمایشگاه
+            </a>
+
+        </div>
+
+
+        <div class="exercise-card" data-type="js">
+
+            <span>JavaScript</span>
+
+            <h3>
+                تمرین 2: مثبت یا منفی
+            </h3>
+
+            <p>
+                برنامه‌ای بساز که مثبت یا منفی بودن عدد را مشخص کند.
+            </p>
+
+            <a href="lab.html">
+                حل در آزمایشگاه
+            </a>
+
+        </div>
+
+
+        <div class="exercise-card" data-type="js">
+
+            <span>JavaScript</span>
+
+            <h3>
+                تمرین 3: شمارنده
+            </h3>
+
+            <p>
+                یک شمارنده با دکمه افزایش بساز.
+            </p>
+
+            <a href="lab.html">
+                حل در آزمایشگاه
+            </a>
+
+        </div>
+
+
+        <div class="exercise-card" data-type="common">
+
+            <span>مشترک</span>
+
+            <h3>
+                پروژه 1: کارت معرفی
+            </h3>
+
+            <p>
+                با HTML و CSS یک کارت معرفی شخصی بساز.
+            </p>
+
+            <a href="lab.html">
+                شروع پروژه
+            </a>
+
+        </div>
+
+
+        <div class="exercise-card" data-type="common">
+
+            <span>مشترک</span>
+
+            <h3>
+                پروژه 2: فرم تماس
+            </h3>
+
+            <p>
+                یک فرم تماس با JavaScript بساز.
+            </p>
+
+            <a href="lab.html">
+                شروع پروژه
+            </a>
+
+        </div>
+
+
+        <div class="exercise-card" data-type="common">
+
+            <span>مشترک</span>
+
+            <h3>
+                پروژه 3: ماشین حساب
+            </h3>
+
+            <p>
+                با HTML، CSS و JavaScript یک ماشین حساب بساز.
+            </p>
+
+            <a href="lab.html">
+                شروع پروژه
+            </a>
+
+        </div>
+
+
+        <div class="exercise-card" data-type="common">
+
+            <span>پروژه نهایی</span>
+
+            <h3>
+                🏆 سایت شخصی
+            </h3>
+
+            <p>
+                یک سایت شخصی کامل با HTML، CSS و JavaScript بساز.
+            </p>
+
+            <a href="lab.html">
+                شروع پروژه
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 کدنویسی آسان
+    </p>
+
+</footer>
+
+
+<script>
+
+function showExercises(type) {
+
+    var cards =
+        document.querySelectorAll(".exercise-card");
+
+
+    for (var i = 0; i < cards.length; i++) {
+
+        if (
+            type === "all" ||
+            cards[i].getAttribute("data-type") === type
+        ) {
+
+            cards[i].style.display = "block";
+
+        } else {
+
+            cards[i].style.display = "none";
+
+        }
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
